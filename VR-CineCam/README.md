@@ -90,34 +90,34 @@ Shot 전환이 과도하게 빈번하게 발생하는 문제를 줄이기 위해
 
 ## Main Source Files
 
-### `SignalExtractor.cs`
+### [`SignalExtractor.cs`](./Source/SignalExtractor.cs)
 HMD와 Controller로부터 카메라 판단에 필요한 VR 입력 신호를 추출합니다.
 
-### `SituationEstimator.cs`
+### [`SituationEstimator.cs`](./Source/SituationEstimator.cs)
 Combat / Interaction / Exploration 상태를 계산합니다.
 
-### `AttentionTargetEstimator.cs`
-플레이어의 Aim / Gaze 정보를 이용해 현재 관심 대상을 추정합니다.
+### [`AttentionTargetEstimator.cs`](./Source/AttentionTargetEstimator.cs)
+Aim / Gaze 정보를 이용해 현재 관심 대상을 추정합니다.
 
-### `CameraCandidateGenerator.cs`
+### [`CameraCandidateGenerator.cs`](./Source/CameraCandidateGenerator.cs)
 상황과 Target 관계를 바탕으로 Camera Shot 후보를 생성합니다.
 
-### `ShotEvaluator.cs`
+### [`ShotEvaluator.cs`](./Source/ShotEvaluator.cs)
 가시성, 상황 적합도, Occlusion 등의 요소를 이용해 Shot을 평가합니다.
 
-### `CameraDirector.cs`
+### [`CameraDirector.cs`](./Source/CameraDirector.cs)
 가장 적합한 Shot을 선택하고 Camera 전환을 안정화합니다.
 
-### `CameraAnchorUpdater.cs`
-카메라 Anchor의 급격한 이동을 완화합니다.
+### [`CameraAnchorUpdater.cs`](./Source/CameraAnchorUpdater.cs)
+Camera Anchor의 급격한 이동을 완화합니다.
 
-### `TargetGroupUpdater.cs`
+### [`TargetGroupUpdater.cs`](./Source/TargetGroupUpdater.cs)
 Cinemachine Target Group 변경에 따른 FOV 및 구도 변화를 완화합니다.
 
-### `OcclusionTransparencyHandler.cs`
+### [`OcclusionTransparencyHandler.cs`](./Source/OcclusionTransparencyHandler.cs)
 Spectator Camera 시야를 가리는 오브젝트를 투명하게 처리합니다.
 
-### `VCamPhysicsPassthrough.cs`
+### [`VCamPhysicsPassthrough.cs`](./Source/VCamPhysicsPassthrough.cs)
 Virtual Camera 제어에 필요한 물리 정보를 전달합니다.
 
 ---

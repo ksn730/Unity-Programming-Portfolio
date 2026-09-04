@@ -74,7 +74,7 @@ HMD와 Avatar의 작은 움직임이 Camera에 직접 전달되는 것을 줄였
 
 ## Main Source Files
 
-### `CenterViewpoint.cs`
+### [`CenterViewpoint.cs`](./Source/CenterViewpoint.cs)
 
 HMD 방향을 24개의 Focus Point에 Mapping하고,  
 Temporal Gating과 Threshold를 이용해 Camera 방향 전환을 결정합니다.
@@ -82,22 +82,22 @@ Temporal Gating과 Threshold를 이용해 Camera 방향 전환을 결정합니�
 또한 목표 방향으로 Camera를 Smooth Rotation시키고  
 최종 위치에 가까워지면 Snap하여 미세한 움직임을 줄입니다.
 
-### `StablePivot.cs`
+### [`StablePivot.cs`](./Source/StablePivot.cs)
 
 Position과 Yaw 값에 시간 기반 Low-Pass Filtering을 적용하여  
 Camera Pivot을 안정화합니다.
 
-### `PositionOnlyPivot.cs`
+### [`PositionOnlyPivot.cs`](./Source/PositionOnlyPivot.cs)
 
 HMD의 로컬 위치 변화에서 Camera에 불필요한 성분을 제거하고  
 Position 정보만 부드럽게 추종합니다.
 
-### `SpectatorXRDetach.cs`
+### [`SpectatorXRDetach.cs`](./Source/SpectatorXRDetach.cs)
 
 Spectator Camera가 XR Tracking에 의해 자동으로 제어되지 않도록 분리하고  
 일반 Display 출력용 Camera로 사용할 수 있도록 설정합니다.
 
-### `FirstPersonSpectatorView.cs`
+### [`FirstPersonSpectatorView.cs`](./Source/FirstPersonSpectatorView.cs)
 
 비교 실험을 위한 First-Person Spectator View의 기본 Camera 추종을 처리합니다.
 
